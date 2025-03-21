@@ -3,8 +3,8 @@
 // String, Numbers, Boolean, Undefined, Null, Symbol, BigInt
 
 // Symbol
-const id = symbol("123");
-const anotherId = symbol("123");
+const id = Symbol("123");
+const anotherId = Symbol("123");
 console.log(id === anotherId); // false
 
 // BigInt
@@ -27,3 +27,26 @@ const myArray = [1, 2, 3, 4, 5];
 const myFunction = function () {
   console.log("Hello World");
 };
+
+// STACK (Primitive Data Types)
+
+let myRealName = "John";
+
+let anotherName = myRealName;
+anotherName = "Josh";
+
+console.log(myRealName); // John
+console.log(anotherName); // Josh
+
+// HEAP (Reference Data Types)
+
+let userOne = {
+  email: "user@google.com",
+  upi: "user@ybl",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "Josh@google.com";
+console.log(userOne.email); // Josh@google.com
+console.log(userTwo.email); // Josh@google.com
