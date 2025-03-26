@@ -38,3 +38,8 @@ if (userLoggedIn && debitCard) {
 if (loggedInGoogle || loggedInEmail) {
   console.log("User can login");
 }
+
+// Ternary Operator
+// condition ? exprIfTrue : exprIfFalse
+const iceTeaPrice = 100;
+iceTeaPrice >= 80 ? console.log("more than 80") : console.log("less than 80");
