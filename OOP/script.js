@@ -1,34 +1,32 @@
 const user = {
-    username: 'henry',
-    loginCount: 8,
-    signedIn: true,
+  username: "henry",
+  loginCount: 8,
+  signedIn: true,
 
-    getUserDetails: function(){
-        //console.log("Got user details from database")
-        //console.log(`Username: ${this.username}`)
-        console.log(this)
-    }
-}
+  getUserDetails: function () {
+    //console.log("Got user details from database")
+    //console.log(`Username: ${this.username}`)
+    console.log(this);
+  },
+};
 
-console.log(user.username)
+console.log(user.username);
 // console.log(user.getUserDetails())
-console.log(this)
-
+console.log(this);
 
 // constructor function
-function myuser(username, loginCount, isLoggedIn){
-    this.username = username
-    this.loginCount = loginCount
-    this.isLoggedIn = isLoggedIn
+function myuser(username, loginCount, isLoggedIn) {
+  this.username = username;
+  this.loginCount = loginCount;
+  this.isLoggedIn = isLoggedIn;
 
-    this.greeting = function() {
-        console.log(`Welcome ${this.username}`)
-    }
+  this.greeting = function () {
+    console.log(`Welcome ${this.username}`);
+  };
 
-    return this
+  return this;
 }
-const userOne = new myuser('henry', 12, true)
-const userTwo = new myuser('Jack', 11, false)
-console.log(userOne)
-console.log(userTwo)
-
+const userOne = new myuser("henry", 12, true);
+const userTwo = new myuser("Jack", 11, false);
+console.log(userOne);
+console.log(userTwo);
